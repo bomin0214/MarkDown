@@ -1,5 +1,3 @@
-<pre><code>{}</code></pre>
-
 1.Headers 헤더
    ==============
 
@@ -23,19 +21,19 @@
 
 This is an H1
 =============
-<pre><code>{
+<pre><code>
 This is an H1
 =============
-}</code></pre>
+</code></pre>
 
 - 작은 제목
 
 This is an H2
 -------------
-<pre><code>{
+<pre><code>
 This is an H2
 -------------
-}</code></pre>
+</code></pre>
 
 2.BlockQuote(인용)
    ====
@@ -43,11 +41,11 @@ This is an H2
 > This is a first blockqute.
 >	> This is a second blockqute.
 >	>	> This is a third blockqute.
-<pre><code>{
+<pre><code>
   > This is a first blockqute.
   >	> This is a second blockqute.
   >	>	> This is a third blockqute.
-}</code></pre>
+</code></pre>
 > This is a first blockqute.
 >	> This is a second blockqute.
 >	>	> This is a third blockqute.
@@ -56,16 +54,16 @@ This is an H2
 3.목록
    ====
 - 순서 있는 목록(번호)
-<pre><code>{
+<pre><code>
 1. 첫번째
 2. 두번째
 3. 세번째
-}</code></pre>
+</code></pre>
 1. 첫번째
 2. 두번째
 3. 세번째
 - 순서 없는 목록(*,+,-)
-<pre><code>{
+<pre><code>
 * 빨강
   * 녹색
     * 파랑
@@ -77,7 +75,7 @@ This is an H2
 - 빨강
   - 녹색
     - 파랑
-}</code></pre>
+</code></pre>
 * 빨강
   * 녹색
     * 파랑
@@ -94,14 +92,16 @@ This is an H2
    ====
 - 들여쓰기
 4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
-<pre><code>{
+<pre><code>
 This is a normal paragraph:
 
     This is a code block.
     
 end code block.
-}</code></pre>
+</code></pre>
 
+
+> 결과
 This is a normal paragraph:
 
     This is a code block.
@@ -121,10 +121,10 @@ end code block.
 
 - 코드 블럭 사용하는 방법
   ----
-1. <pre><code>{}</code></pre>
-<pre><code>{
-<pre><code>{}</code></pre>
-}</code></pre>
+1. '<pre><code></code></pre>'
+<pre><code>
+'<pre><code></code></pre>'
+</code></pre>
 
 2. (```)
    
@@ -138,7 +138,7 @@ public class BootSpringBootApplication {
 
 5.수평선 <hr/>
    ===
-'''
+<pre><code>
 * * *
 
 ***
@@ -148,7 +148,17 @@ public class BootSpringBootApplication {
 - - -
 
 ---------------------------------------
-'''
+</code></pre>
+
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
 
 6.링크
    =====
