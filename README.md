@@ -1,6 +1,6 @@
 <pre><code>{}</code></pre>
 
-1. Headers 헤더
+Headers 헤더
    ==============
 
 # 제목 1
@@ -182,3 +182,38 @@ Link: [Google][googlelink]
 '''
 * 외부링크: <http://example.com/>
 * 이메일링크: <address@example.com>
+
+7.강조
+======
+'''
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+'''
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+> 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
+
+8.이미지
+===
+'''
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+'''
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+
+- 사이즈 조절
+'''
+<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+'''
+
+9.줄바꿈
+===
+- 3칸 이상 띄어쓰기를 하면 줄이 바뀐다.
