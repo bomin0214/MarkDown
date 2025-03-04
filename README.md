@@ -102,6 +102,7 @@ end code block.
 
 
 > 결과
+***
 This is a normal paragraph:
 
     This is a code block.
@@ -137,7 +138,8 @@ public class BootSpringBootApplication {
 ```
 
 5.수평선 <hr/>
-   ===
+==
+
 <pre><code>
 * * *
 
@@ -162,46 +164,41 @@ public class BootSpringBootApplication {
 
 6.링크
    =====
-- 참조 링크
-'''
-[link keyword][id]
 
-[id]: URL "Optional Title here"
-
-// code
-Link: [Google][googlelink]
-
-[googlelink]: https://google.com "Go google"
 '''
-- Link: [Google][googlelink]
+[이름](링크)
+[이름](링크 "설명")
+[이름][참조]
+'''
 
-[googlelink]: https://google.com "Go google"
+[GOOGLE](https://google.com)
 
-- 외부링크
-'''
-사용문법: [Title](link)
-적용예: [Google](https://google.com, "google link")
-'''
-- [Google](https://google.com, "google link")
-- 자동 연결
-'''
-일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
+[NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
 
-* 외부링크: <http://example.com/>
-* 이메일링크: <address@example.com>
-'''
-* 외부링크: <http://example.com/>
-* 이메일링크: <address@example.com>
+[상대적 참조](../users/login)
+
+[Dribbble][Dribbble Link]
+
+[GitHub][1]
+
 
 7.강조
 ======
+
+- 인라인
+> ' 백틱 기호 사용
 '''
+'인라인' 인라인됨.
+'''
+
+- 문자 강조
+<pre><code>
 *single asterisks*
 _single underscores_
 **double asterisks**
 __double underscores__
 ~~cancelline~~
-'''
+</code></pre>
 *single asterisks*
 _single underscores_
 **double asterisks**
@@ -209,20 +206,101 @@ __double underscores__
 ~~cancelline~~
 > 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
 
+- 코드 강조
+<pre><code>
+```html
+<a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
+```
+
+```css
+.list > li {
+  position: absolute;
+  top: 40px;
+}
+```
+
+```javascript
+function add(a, b = 1) {
+  console.log(a, b)
+  return a + b
+}
+```
+
+```bash
+$ npm run dev
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```plaintext
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+</code></pre>
+```html
+<a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
+```
+
+```css
+.list > li {
+  position: absolute;
+  top: 40px;
+}
+```
+
+```javascript
+function add(a, b = 1) {
+  console.log(a, b)
+  return a + b
+}
+```
+
+```bash
+$ npm run dev
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```plaintext
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+
 8.이미지
 ===
 '''
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
+![대체텍스트](이미지주소)
+![대체텍스트](이미지주소 "설명")
+![대체텍스트][참조]
+
+[참조]: 이미지주소
+[참조]: 이미지주소 "설명"
 '''
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
+![대체 텍스트(Alternative Text)](https://picsum.photos/1000/400 "링크 설명(Title)")
+![이미지입니다!][Image]
+
+[Image]: https://picsum.photos/500/300 "이미지입니다!"
 
 - 사이즈 조절
+
+
 '''
 <img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 '''
+
+- 이미지에 링크 추가
+
+'''
+[![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
+'''
+[![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
 
 9.줄바꿈
 ===
