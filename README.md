@@ -122,9 +122,9 @@ end code block.
 
 - 코드 블럭 사용하는 방법
   ----
-1. '<pre><code></code></pre>'
+1. <code><pre><code></code></pre><code></code>
 <pre><code>
-'<pre><code></code></pre>'
+<pre><code></code></pre>
 </code></pre>
 
 2. (```)
@@ -170,7 +170,13 @@ public class BootSpringBootApplication {
 [이름](링크 "설명")
 [이름][참조]
 </code></pre>
+<pre><code>
+[GOOGLE](https://google.com)
 
+[NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
+
+[상대적 참조](../users/login)
+</code></pre>
 [GOOGLE](https://google.com)
 
 [NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
@@ -183,9 +189,10 @@ public class BootSpringBootApplication {
 
 - 인라인
 <code>인라인 됐음.</code>
-<pre><code>
+
+'''
 <code> 인 라 인</code>
-</code></pre>
+'''
 
 
 - 문자 강조
@@ -306,9 +313,9 @@ But let's throw in a <b>tag</b>.
 10.표
 ==
 
-- \--- , \:--- : 좌측 정렬
-- \:---: : 가운데 정렬
-- \---: :우측 정렬
+- <code>---</code> , <code>:--- </code>: 좌측 정렬
+- <code>:---:</code> : 가운데 정렬
+- <code>---:</code> :우측 정렬
 
 <pre><code>
 | 헤더 | 헤더 | 헤더 |
@@ -330,13 +337,6 @@ But let's throw in a <b>tag</b>.
 | `fixed` | 브라우저 창을 기준으로 배치 |  |
 | `sticky` | 스크롤 영역 기준으로 배치 |  |
 
-값 | 의미 | 기본값
----|:---:|---:
-`static` | 유형(기준) 없음 / 배치 불가능 | `static`
-`relative` | 요소 자신을 기준으로 배치 |
-`absolute` | 위치 상 부모_(조상)요소를 기준으로 배치 |
-`fixed` | 브라우저 창을 기준으로 배치 |
-`sticky` | 스크롤 영역 기준으로 배치 |
 </code></pre>
 | 값 | 의미 | 기본값 |
 |---|:---:|---:|
