@@ -123,10 +123,6 @@ end code block.
 - 코드 블럭 사용하는 방법
   ----
 1. `<pre><code></code></pre>`
-<pre><code>
-`<pre><code></code></pre>`
-</code></pre>
-
 2. (```)
    
 ```
@@ -285,7 +281,7 @@ But let's throw in a <b>tag</b>.
 [인라인 링크](https://velog.io/)
 
 url 링크는 아래처럼
-<https://velog.io/>
+`<https://velog.io/>`
 
 참조 링크
 [velog]:(https://velog.io/)
