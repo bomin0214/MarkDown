@@ -182,7 +182,6 @@ public class BootSpringBootApplication {
 
 7.강조
 ======
-
 인라인
 -------
 `<code>인라인 코드 이렇게 작성함.</code>`
@@ -273,6 +272,9 @@ print s
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
+코드 안에 <> 넣는법
+--
+`&lt; 와 &gt;`
 
 8.링크
 ===
