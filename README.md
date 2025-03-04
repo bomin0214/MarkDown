@@ -111,11 +111,11 @@ end code block.
 
 
 > 한 줄 띄어쓰지 않으면 인식이 제대로 안되는 문제
-<pre><code>{
+<pre><code>
 This is a normal paragraph:
     This is a code block.
 end code block.
-}</code></pre>
+</code></pre>
 This is a normal paragraph:
     This is a code block.
 end code block.
@@ -138,7 +138,6 @@ public class BootSpringBootApplication {
 ```
 
 5.수평선 <hr/>
-==
 
 <pre><code>
 * * *
@@ -165,11 +164,11 @@ public class BootSpringBootApplication {
 6.링크
    =====
 
-'''
+<pre><code>
 [이름](링크)
 [이름](링크 "설명")
 [이름][참조]
-'''
+</code></pre>
 
 [GOOGLE](https://google.com)
 
@@ -177,19 +176,17 @@ public class BootSpringBootApplication {
 
 [상대적 참조](../users/login)
 
-[Dribbble][Dribbble Link]
-
-[GitHub][1]
-
 
 7.강조
 ======
 
 - 인라인
-> ' 백틱 기호 사용
-'''
-'인라인' 인라인됨.
-'''
+> ' 백틱 기호 사용   
+'강조강조강조강조강조' 인라인됨.
+<pre><code>
+'인라인'
+</code></pre>
+
 
 - 문자 강조
 <pre><code>
@@ -199,11 +196,11 @@ _single underscores_
 __double underscores__
 ~~cancelline~~
 </code></pre>
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
+*single asterisks*   
+_single underscores_   
+**double asterisks**   
+__double underscores__   
+~~cancelline~~   
 > 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
 
 - 코드 강조
