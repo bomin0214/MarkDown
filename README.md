@@ -122,9 +122,9 @@ end code block.
 
 - 코드 블럭 사용하는 방법
   ----
-1. <code><pre><code></code></pre><code></code>
+1. `<pre><code></code></pre>`
 <pre><code>
-<pre><code></code></pre>
+`<pre><code></code></pre>`
 </code></pre>
 
 2. (```)
@@ -189,14 +189,11 @@ public class BootSpringBootApplication {
 
 인라인
 -------
-<pre><code>
-`<code></code>`사용
-</code></pre>
-<code>인라인 됐음.</code>
-
-백틱(`) 이용
-  ---
 `<code>인라인 코드 이렇게 작성함.</code>`
+
+코드 안에 코드 보이게 하는법
+---
+백택 (`) 이용하기
 
 문자 강조
    ---
