@@ -281,7 +281,7 @@ But let's throw in a <b>tag</b>.
 [인라인 링크](https://velog.io/)
 
 url 링크는 아래처럼
-<https://velog.io/>
+&lt;https://velog.io/&gt;
 
 참조 링크
 [velog]:(https://velog.io/)
