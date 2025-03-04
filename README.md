@@ -1,6 +1,6 @@
 <pre><code>{}</code></pre>
 
-Headers 헤더
+1.Headers 헤더
    ==============
 
 # 제목 1
@@ -37,7 +37,7 @@ This is an H2
 -------------
 }</code></pre>
 
-2. BlockQuote(인용)
+2.BlockQuote(인용)
    ====
 ">" 사용
 > This is a first blockqute.
@@ -53,7 +53,7 @@ This is an H2
 >	>	> This is a third blockqute.
 > > > - 이 안에 다른 마크다운 요소 포함 가능
 
-3. 목록
+3.목록
    ====
 - 순서 있는 목록(번호)
 <pre><code>{
@@ -90,7 +90,7 @@ This is an H2
   - 녹색
     - 파랑
 
-4. 코드
+4.코드
    ====
 - 들여쓰기
 4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
@@ -136,7 +136,7 @@ public class BootSpringBootApplication {
 }
 ```
 
-5. 수평선 <hr/>
+5.수평선 <hr/>
    ===
 '''
 * * *
@@ -150,7 +150,7 @@ public class BootSpringBootApplication {
 ---------------------------------------
 '''
 
-6. 링크
+6.링크
    =====
 - 참조 링크
 '''
