@@ -187,19 +187,20 @@ public class BootSpringBootApplication {
 7.강조
 ======
 
-- 인라인
-   -------
+인라인
+-------
+
 '''
-<code> 인 라 인</code>
+'<code> 인 라 인</code>'
 '''
 <code>인라인 됐음.</code>
 
-- 백틱(') 이용하여 인라인 코드 작성
+백틱(') 이용
   ---
 <pre><code>'인라인 코드 이렇게 작성함.'</code></pre>
-'인라인 코드 이렇게 작성함.'
 
-- 문자 강조
+
+문자 강조
    ---
 <pre><code>
 *single asterisks*
@@ -215,7 +216,7 @@ __double underscores__
 ~~cancelline~~   
 > 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
 
-- 코드 강조
+코드 강조
   ---
 <pre><code>
 ```html
@@ -302,17 +303,15 @@ url 링크는 아래처럼
 ![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)
 </code></pre>
 
-![이미지 설명](이미지 링크)
 ![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)
 
-- 이미지에 링크 걸기
+이미지에 링크 걸기
   ---
 <pre><code>
 [![이미지 설명](이미지 링크)](연결하고자하는 url "마우스 오버 시 나타낼 링크 title")
 [![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg"이미지 무료 사이트 pixabay")
 </code></pre>
 
-[![이미지 설명](이미지 링크)](연결하고자하는 url "마우스 오버 시 나타낼 링크 title")
 [![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg"이미지 무료 사이트 pixabay")
 
 10.줄바꿈
@@ -367,7 +366,5 @@ x가 넣어지면 체크된 체크박스 생성
 
 13.이모지
 ===
-단축키
---
 - window10: 윈도우 + .
 - max: command + control + 스페이스바
