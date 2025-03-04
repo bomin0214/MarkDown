@@ -189,15 +189,14 @@ public class BootSpringBootApplication {
 
 인라인
 -------
-
-'''
-'<code> 인 라 인</code>'
-'''
+<pre><code>
+`<code> 인 라 인</code>`
+</code></pre>
 <code>인라인 됐음.</code>
 
-백틱(') 이용
+백틱(`) 이용
   ---
-<pre><code>'인라인 코드 이렇게 작성함.'</code></pre>
+<pre><code>`<code>인라인 코드 이렇게 작성함.</code>`</code></pre>
 
 
 문자 강조
