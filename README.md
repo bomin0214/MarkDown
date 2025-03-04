@@ -188,14 +188,19 @@ public class BootSpringBootApplication {
 ======
 
 - 인라인
-<code>인라인 됐음.</code>
-
+   -------
 '''
 <code> 인 라 인</code>
 '''
+<code>인라인 됐음.</code>
 
+- 백틱(') 이용하여 인라인 코드 작성
+  ---
+<pre><code>'인라인 코드 이렇게 작성함.'</code></pre>
+'인라인 코드 이렇게 작성함.'
 
 - 문자 강조
+   ---
 <pre><code>
 *single asterisks*
 _single underscores_
@@ -211,6 +216,7 @@ __double underscores__
 > 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
 
 - 코드 강조
+  ---
 <pre><code>
 ```html
 <a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
@@ -276,41 +282,44 @@ No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
 
-8.이미지
+8.링크
 ===
 <pre><code>
-![대체텍스트](이미지주소)
-![대체텍스트](이미지주소 "설명")
-![대체텍스트][참조]
+인라인 링크는 아래처럼
+[인라인 링크](https://velog.io/)
 
-[참조]: 이미지주소
-[참조]: 이미지주소 "설명"
+url 링크는 아래처럼
+<https://velog.io/>
+
+참조 링크
+[velog]:(https://velog.io/)
 </code></pre>
+
+9.이미지
+   ==
 <pre><code>
-![대체 텍스트(Alternative Text)](https://picsum.photos/1000/400 "링크 설명(Title)")
-![이미지입니다!][Image]
-
-[Image]: https://picsum.photos/500/300 "이미지입니다!"
+![이미지 설명](이미지 링크)
+![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)
 </code></pre>
 
-- 사이즈 조절
+![이미지 설명](이미지 링크)
+![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)
+
+- 이미지에 링크 걸기
+  ---
 <pre><code>
-<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
-<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+[![이미지 설명](이미지 링크)](연결하고자하는 url "마우스 오버 시 나타낼 링크 title")
+[![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg"이미지 무료 사이트 pixabay")
 </code></pre>
 
-- 이미지에 링크 추가
+[![이미지 설명](이미지 링크)](연결하고자하는 url "마우스 오버 시 나타낼 링크 title")
+[![고양이애옹](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg)](https://cdn.pixabay.com/photo/2019/03/13/08/29/cat-4052454_1280.jpg"이미지 무료 사이트 pixabay")
 
-<pre><code>
-[![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
-</code></pre>
-[![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
-
-9.줄바꿈
+10.줄바꿈
 ===
 - 3칸 이상 띄어쓰기를 하면 줄이 바뀐다.
 
-10.표
+11.표
 ==
 
 - <code>---</code> , <code>:--- </code>: 좌측 정렬
@@ -345,3 +354,20 @@ But let's throw in a <b>tag</b>.
 | `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  |
 | `fixed` | 브라우저 창을 기준으로 배치 |  |
 | `sticky` | 스크롤 영역 기준으로 배치 |  |
+
+12.체크박스(Check Box)
+===
+x가 넣어지면 체크된 체크박스 생성
+<pre><code>
+- [ ] 운동 하기
+- [x] 강의 듣기
+</code></pre>
+- [ ] 운동 하기
+- [x] 강의 듣기
+
+13.이모지
+===
+단축키
+--
+- window10: 윈도우 + .
+- max: command + control + 스페이스바
