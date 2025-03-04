@@ -138,6 +138,7 @@ public class BootSpringBootApplication {
 ```
 
 5.수평선 <hr/>
+==
 
 <pre><code>
 * * *
@@ -181,11 +182,9 @@ public class BootSpringBootApplication {
 ======
 
 - 인라인
-> ' 백틱 기호 사용
-
-<code>\강조강조강조강조강조 인라인됨.</code>
+<code>인라인 됐음.</code>
 <pre><code>
-\인라인\
+<code> 인 라 인</code>
 </code></pre>
 
 
@@ -272,32 +271,32 @@ But let's throw in a <b>tag</b>.
 
 8.이미지
 ===
-'''
+<pre><code>
 ![대체텍스트](이미지주소)
 ![대체텍스트](이미지주소 "설명")
 ![대체텍스트][참조]
 
 [참조]: 이미지주소
 [참조]: 이미지주소 "설명"
-'''
+</code></pre>
+<pre><code>
 ![대체 텍스트(Alternative Text)](https://picsum.photos/1000/400 "링크 설명(Title)")
 ![이미지입니다!][Image]
 
 [Image]: https://picsum.photos/500/300 "이미지입니다!"
+</code></pre>
 
 - 사이즈 조절
-
-
-'''
+<pre><code>
 <img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
-'''
+</code></pre>
 
 - 이미지에 링크 추가
 
-'''
+<pre><code>
 [![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
-'''
+</code></pre>
 [![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
 
 9.줄바꿈
@@ -306,9 +305,10 @@ But let's throw in a <b>tag</b>.
 
 10.표
 ==
-- ㅇ
-- ㅇ
-- ㅇ
+
+- \--- , \:--- : 좌측 정렬
+- \:---: : 가운데 정렬
+- \---: :우측 정렬
 
 <pre><code>
 | 헤더 | 헤더 | 헤더 |
@@ -345,11 +345,3 @@ But let's throw in a <b>tag</b>.
 | `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  |
 | `fixed` | 브라우저 창을 기준으로 배치 |  |
 | `sticky` | 스크롤 영역 기준으로 배치 |  |
-
-값 | 의미 | 기본값
----|:---:|---:
-`static` | 유형(기준) 없음 / 배치 불가능 | `static`
-`relative` | 요소 자신을 기준으로 배치 |
-`absolute` | 위치 상 부모_(조상)요소를 기준으로 배치 |
-`fixed` | 브라우저 창을 기준으로 배치 |
-`sticky` | 스크롤 영역 기준으로 배치 |
